@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <!-- saca el campo incoterm -->
+
+        <record id="view_invoice_form_valente" model="ir.ui.view">
+            <field name="name">l10n_ar.invoice.form.valente</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="afip_incoterm_id" position="replace"/>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -3,4 +3,4 @@
 
 # jeo Software
 
-##modulos odoo v8.0
+##customización valente odoo v8.0

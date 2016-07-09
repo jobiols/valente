@@ -242,6 +242,7 @@ class account_invoice(models.Model):
                 raise Warning(_(
                     "Invoice ID %i shouldn't have any vat tax" % invoice.id))
 
+    @api.one
     def _get_taxes_and_prices(self):
         super(account_invoice, self)._get_taxes_and_prices()
 

@@ -242,6 +242,26 @@ class account_invoice(models.Model):
                 raise Warning(_(
                     "Invoice ID %i shouldn't have any vat tax" % invoice.id))
 
+    def _get_taxes_and_prices(self):
+        super(account_invoice, self)._get_taxes_and_prices()
+
+        if not self.vat_discriminated:
+            # para el caso de factura B con percepcion hay que imprimir la percepción
+            # para cada impuesto en la linea de impuestos hacer
+            for tax in self.tax_line:
+                # si el impuesto no es iva (que en este caso no hay que discriminarlo)
+                # y no está marcado como que no hay que imprimirlo
+                if not 'IVA' in tax.name and not tax.tax_code_id.notprintable:
+                    # se agrega a los impuestos a imprimir
+                    if not self.printed_tax_ids:
+                        self.printed_tax_ids = tax
+                    else:
+                        self.printed_tax_ids += tax
+
+                    # se descuenta del total sin impuestos para que en la factura
+                    # se vea sumando después de la discriminación.
+                    self.printed_amount_untaxed -= tax.amount
+
 
 
 

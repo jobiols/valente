@@ -32,26 +32,26 @@ Customización Herrajes Valente
 """,
     'author': 'jeo Software',
     'depends': [
-        'l10n_ar_base',  # modulo base para localización argentina
-        'base_vat_unique',  # evita que duplique cuit
-        #        'base_vat_unique_parent',  # evita que duplique cuit en multicompañia
-        'disable_openerp_online',  # elimina referencias a odoo online
+        'l10n_ar_base',             # modulo base para localización argentina
+        'base_vat_unique',          # evita que duplique cuit
+        #'base_vat_unique_parent',  # evita que duplique cuit en multicompañia
+        'disable_openerp_online',   # elimina referencias a odoo online
         'account_cancel',  # Muestra el check en los diarios que permite cancelar asientos
-        'product_pricelist_import',  # Importa lista de precios y carga productos
-        'hide_product_variants',  # oculta las variantes
-        'express_checkout',  # Facturación express
-        'invoice_order_by_id',  # ordena facturas ultima arriba
-        'account_invoice_tax_wizard',  # agrega menu add_taxes para cargar percepciones
+        'product_pricelist_import', # Importa lista de precios y carga productos
+        'hide_product_variants',    # oculta las variantes
+        'express_checkout',         # Facturación express
+        'invoice_order_by_id',      # ordena facturas ultima arriba
         'sale_order_recalculate_prices',  # agrega boton para recalcular precios
-        'consult_product_price',  # consulta de precios
-        #        'account_journal_sequence'         # agrega un campo de secuencia en el diario para elegirlos
-        #        'account_statement_move_import'    # agrega boton de importar aputnes en extractos bancarios
+        'consult_product_price',    # consulta de precios
+        #'account_journal_sequence' # agrega un campo de secuencia en el diario para elegirlos
+        #'account_statement_move_import'  # agrega boton de importar aputnes en extractos bancarios
         'account_journal_sequence', #Adds sequence field on account journal and it is going to be considered when choosing journals in differents models.
-        'l10n_ar_aeroo_sale',  # dependencia requerida
-        'l10n_ar_aeroo_purchase',  # dependencia requerida
-        'l10n_ar_aeroo_einvoice',  # dependencia requerida
-        'l10n_ar_aeroo_stock',  # dependencia requerida
-        'po_custom_reports',  # dependencia requerida
+        'l10n_ar_aeroo_sale',       # dependencia requerida
+        'l10n_ar_aeroo_purchase',   # dependencia requerida
+        'l10n_ar_aeroo_einvoice',   # dependencia requerida
+        'l10n_ar_aeroo_stock',      # dependencia requerida
+        'po_custom_reports',        # dependencia requerida
+        'custom_vat_ledger',        # dependencia requerida
     ],
     'data': [
         'security/security_groups.xml',
@@ -61,7 +61,6 @@ Customización Herrajes Valente
         'views/custom_reports.xml',
         'views/invoice_view.xml',
         'views/sale_view.xml',
-        'views/account_invoice_view.xml',
     ],
     'test': [
     ],

@@ -28,7 +28,7 @@
     This proyect support [semver](http://semver.org/)
     
 Customización Herrajes Valente
-================================
+==============================
 """,
     'author': 'jeo Software',
     'depends': [

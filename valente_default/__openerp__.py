@@ -18,7 +18,7 @@
 ########################################################################333###
 {
     'name': 'Herrajes Valente',
-    'version': '8.0.1.0.2',
+    'version': '8.0.1.0.3',
     'category': 'Tools',
     'summary': 'Customización Herrajes Valente',
     'description': """

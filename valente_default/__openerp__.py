@@ -62,6 +62,7 @@ Customización Herrajes Valente
         'views/custom_reports.xml',
         'views/invoice_view.xml',
         'views/sale_view.xml',
+        'views/account_tax_view.xml'
     ],
     'test': [
     ],

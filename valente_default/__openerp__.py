@@ -53,6 +53,7 @@ Customización Herrajes Valente
         'l10n_ar_aeroo_stock',      # dependencia requerida
         'po_custom_reports',        # dependencia requerida
         'custom_vat_ledger',        # dependencia requerida
+        'odoo_argentina_fix',       # patch a la localización
     ],
     'data': [
         'security/security_groups.xml',

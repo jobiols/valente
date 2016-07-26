@@ -15,8 +15,8 @@
 
         <!-- pone cantidad antes que descripción en el presupuesto y orden de venta -->
 
-        <record id="view_order_form_valente" model="ir.ui.view">
-            <field name="name">sale.order.form.valente</field>
+        <record id="view_sale_form_valente" model="ir.ui.view">
+            <field name="name">l10n_ar.sale.form.valente</field>
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">

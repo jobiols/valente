@@ -55,7 +55,7 @@ Customización Herrajes Valente
         'custom_vat_ledger',        # dependencia requerida
         'odoo_argentina_fix',       # patch a la localización
         'account_invoice_tax_add',  # agrega insercion manual de impuestos para factura de compras
-        'ticket_citi_fix',          # corrige citi para pv impresor fiscal
+#        'ticket_citi_fix',          # corrige citi para pv impresor fiscal
 
     ],
     'data': [

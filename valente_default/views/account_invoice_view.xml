@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+       <!-- Poner en rojo las facturas en estado open -->
+        <record model="ir.ui.view" id="account_invoice_tree">
+            <field name="name">Account Invoice</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//tree[@name='user_id']" position="attributes">
+                        <attribute default_order="id desc"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

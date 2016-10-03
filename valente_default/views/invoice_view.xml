@@ -2,6 +2,20 @@
 <openerp>
     <data>
 
+       <!-- pone en rojo las facturas open -->
+        <record model="ir.ui.view" id="account_invoice_tree">
+            <field name="name">Account Invoice</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//tree" position="attributes">
+                        <attribute name="colors">red:state == 'open'</attribute>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
         <!-- saca el campo incoterm -->
 
         <record id="view_invoice_form_valente" model="ir.ui.view">

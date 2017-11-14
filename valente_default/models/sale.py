@@ -17,11 +17,15 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##################################################################################
-from openerp.osv import osv
+from openerp.osv import fields, osv
 
 
 class sale_order(osv.osv):
     _inherit = "sale.order"
+
+    _columns = {
+        'picking_order': fields.boolean('Imprimir como Orden de entrega'),
+    }
 
     # cuando cambia la lista de precios,
     # hace lo mismo que la original salvo que no muestra el cartel de que no se

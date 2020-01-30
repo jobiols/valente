@@ -17,7 +17,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ########################################################################333###
 {
-    'name': 'Herrajes Valente',
+    'name': 'Valente',
     'version': '8.0.1.1.0',
     'category': 'Tools',
     'summary': 'Customización Herrajes Valente',

@@ -74,5 +74,17 @@ Customización Herrajes Valente
     'auto_install': False,
     'images': [],
 
+    'repos': [
+        {'usr': 'jobiols', 'repo': 'valente', 'branch': '8.0'},
+#        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '8.0'},
+#        {'usr': 'odoomrp', 'repo': 'odoomrp-wip', 'branch': '8.0'},
+    ],
+    'docker': [
+        {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '8.0'},
+        {'name': 'postgres', 'usr': 'postgres', 'ver': '9.5'},
+    ],
+
+    'port': '8068'
+
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

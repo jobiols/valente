@@ -26,7 +26,7 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
     This proyect support [semver](http://semver.org/)
-    
+
 Customización Herrajes Valente
 ==============================
 """,
@@ -76,15 +76,18 @@ Customización Herrajes Valente
 
     'repos': [
         {'usr': 'jobiols', 'repo': 'valente', 'branch': '8.0'},
-#        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '8.0'},
-#        {'usr': 'odoomrp', 'repo': 'odoomrp-wip', 'branch': '8.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-jeo-ce', 'branch': '8.0'},
+        {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '8.0'},
+        {'usr': 'odoomrp', 'repo': 'odoomrp-wip', 'branch': '8.0'},
+        {'usr': 'jobiols', 'repo': 'jeo', 'branch': '8.0'},
+        {'usr': 'jobiols', 'repo': 'fiscal-printer', 'branch': '8.0'},
     ],
     'docker': [
         {'name': 'aeroo', 'usr': 'jobiols', 'img': 'aeroo-docs'},
-        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '8.0'},
+        {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-jeo', 'ver': '8.1'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '9.5'},
     ],
 
-    'port': '8068'
+    'port': '8069'
 
 }
